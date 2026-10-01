@@ -1,0 +1,60 @@
+{
+  "source_directory": "tpu/tpu/TPU_CRG",
+  "files": [
+    {
+      "path": "filelist.f",
+      "bytes": 79,
+      "sha256": "204ec5afc3ff72ee73352845db18d731041f6df5b9cbf5d64ab6a7be9a91c71a"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 4970,
+      "sha256": "bb41dcf07c56d90a7df03b343ef289b63ff966fdd5619a89b05601b984af1a9d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1303,
+      "sha256": "fad6fa3ed6085c22c72f076f8ded916c3c62e4ddf9fb42384266d236584dc641"
+    },
+    {
+      "path": "rtl/crg_icg.sv",
+      "bytes": 619,
+      "sha256": "4c489f52c67f80369d4af807d0802f4b66570cb5e508edd08e8cc18497d4235e"
+    },
+    {
+      "path": "rtl/pe_crg.sv",
+      "bytes": 1690,
+      "sha256": "da80b213e5ed4d99797679576fada118cded13075f6e062ffeaf96c4305e8ff8"
+    },
+    {
+      "path": "rtl/rst_sync.sv",
+      "bytes": 1172,
+      "sha256": "7e4e783a208c1f52c2f4cd1c46a27178e7b1a94e0e0012d0811dc0e60fa141a4"
+    },
+    {
+      "path": "rtl/sys_clk_crg.sv",
+      "bytes": 1595,
+      "sha256": "039f8f02c2b45a9d9750f84807822313e401e3680ca261bcb4f73308af211e9b"
+    },
+    {
+      "path": "rtl/tpu_crg.sv",
+      "bytes": 2006,
+      "sha256": "5ea589f7531e6c871b1522c97605e6565a4fbc077efbbc0f018f4f7d242a6e02"
+    },
+    {
+      "path": "scripts/check_license.sh",
+      "bytes": 1823,
+      "sha256": "67114732f7d73e88837214305d40a6ec04797ff1bf0f0f41a2b02d9791883ed4"
+    },
+    {
+      "path": "tb/tb_tpu_crg_dft.sv",
+      "bytes": 2300,
+      "sha256": "aef18ee7f532964880d7512fdcae608074b2d8dee0c17d18ec0f2a8b67ef06f4"
+    },
+    {
+      "path": "tb/tb_tpu_crg_normal.sv",
+      "bytes": 2265,
+      "sha256": "b1e4adf624c9bdf8b5794c3ba03d4304223cabfdc78c2fc8029a3a90f4301e86"
+    }
+  ]
+}
