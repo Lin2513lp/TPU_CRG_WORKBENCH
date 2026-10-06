@@ -30,6 +30,12 @@ There are **11 project files** in this snapshot. [`source-manifest.json`](source
 
 Open the workbench through the link above to browse the report, code, and waveforms. For simulation, clone this repository, enter `code/`, and use its Makefile in a configured Linux EDA environment. The original tool paths and environment variables in the shared Makefile are preserved; configure these for your installation.
 
+## Latest simulation update
+
+The ICG latches the functional enable, ORs the latch output with the DFT enable, then ANDs the result with the source clock. Change the DFT enable during the low clock phase.
+
+On 2026-10-06, QuestaSim and VM VCS regressions passed all 256 size configurations with 188,683 checks and zero errors. The normal and DFT demonstration testbenches were rerun with VCS, producing new FSDBs and all four Verdi captures. An independent waveform check passed 19,978 checks.
+
 ## Related workbenches
 
 - [AXI_TOP](https://github.com/Lin2513lp/AXI_TOP_WORKBENCH)

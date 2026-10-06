@@ -6,17 +6,14 @@ module crg_icg (
     input wire logic test_enable,
     output logic clk_out
 );
-    // Combine the functional enable and test enable.
-    wire logic gate_enable;
-    assign gate_enable = enable | test_enable;
-
-    // Capture enable only while the source clock is low.
+    // Capture the functional enable only while the source clock is low.
     logic enable_latched;
     always_latch begin
-        if (!clk_in) enable_latched <= gate_enable;
+        if (!clk_in) enable_latched <= enable;
     end
 
-    // Pass complete high pulses when the latched enable is set.
-    assign clk_out = clk_in & enable_latched;
+    // Apply the DFT override after the latch, then gate the source clock.
+    // Change test_enable only while clk_in is low to preserve full pulses.
+    assign clk_out = clk_in & (enable_latched | test_enable);
 endmodule
 `default_nettype wire

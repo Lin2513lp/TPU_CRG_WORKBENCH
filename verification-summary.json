@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-06",
+  "icg_topology": "functional enable -> low-transparent latch -> OR with DFT -> AND with source clock",
+  "questa": {
+    "checks": 188683,
+    "size_configurations": 256,
+    "errors": 0,
+    "passed": true
+  },
+  "vm_vcs": {
+    "checks": 188683,
+    "size_configurations": 256,
+    "errors": 0,
+    "passed": true
+  },
+  "icg_unit": {
+    "checks": 12,
+    "passed": true
+  },
+  "waveform": {
+    "passed": true,
+    "pin_and_reset_checks": 19978,
+    "normal_size_codes": [
+      8,
+      8
+    ],
+    "normal_mask": "0x1f1f1f1f1f"
+  },
+  "captures": [
+    {
+      "name": "normal_overview.png",
+      "sha256": "298a97c6b1d46bb6d445c905d0de2a12f7cb8092c4f0a781e52be02a6a95a86d"
+    },
+    {
+      "name": "normal_pe_clocks.png",
+      "sha256": "1e8de94495f45ceaf86a83b30ce657952dfb5a25f0417982742ed1f4a288d6fd"
+    },
+    {
+      "name": "dft_overview.png",
+      "sha256": "869c0d27837f66f630babeff2f8090d0e4642de4d56944c15ab071a96b69c8b6"
+    },
+    {
+      "name": "dft_reset_internal.png",
+      "sha256": "6d775dbed4bd1ee4daf241708463d44c189b5046bf397663e5c4b7034ac4ed76"
+    }
+  ]
+}

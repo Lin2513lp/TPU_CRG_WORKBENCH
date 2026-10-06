@@ -28,3 +28,5 @@ FSDB 位于 `~/tpu_crg_runs/TPU_CRG/waves/`，同时复制到本工程的
 在 DFT 模式下，测试复位拉低应使 `tpu_rst_n` 立即变为 0；
 只要 `dft_glb_gt_se=1`，系统时钟和全部 PE 时钟就继续运行。
 正常模式复位异步断言，经过两个 sys_clk 上升沿同步释放。
+
+ICG 仅锁存功能使能；DFT 使能在锁存器之后相或。dft_glb_gt_se 须在 sys_clk 低相位切换，或保持稳定。

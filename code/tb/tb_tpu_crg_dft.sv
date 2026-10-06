@@ -54,7 +54,7 @@ module tb_tpu_crg_dft;
         #5 sys_rst_n = 1;
         #10;
 
-        // Force the system clock and all 64 PE clocks on.
+        // Force all clocks on; this stimulus changes test enable during low phase.
         dft_glb_gt_se = 1;
         #30;
 
@@ -73,7 +73,7 @@ module tb_tpu_crg_dft;
         sys_rst_n = 0;
         dft_lgc_rst_n = 0;
         #5 dft_mode = 0;
-        #5 dft_glb_gt_se = 0;
+        #5 dft_glb_gt_se = 0; // The source clock is low at 115.2 ns.
         #5;
         dft_lgc_rst_n = 1;
         sys_rst_n = 1;
