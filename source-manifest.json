@@ -2,21 +2,6 @@
   "source_directory": "tpu/tpu/TPU_CRG",
   "files": [
     {
-      "path": "filelist.f",
-      "bytes": 79,
-      "sha256": "204ec5afc3ff72ee73352845db18d731041f6df5b9cbf5d64ab6a7be9a91c71a"
-    },
-    {
-      "path": "Makefile",
-      "bytes": 4970,
-      "sha256": "bb41dcf07c56d90a7df03b343ef289b63ff966fdd5619a89b05601b984af1a9d"
-    },
-    {
-      "path": "README.md",
-      "bytes": 1435,
-      "sha256": "c49d5dd2fda2f19978e5fe0161ae2e08608dacbd9c8569090864eabbb4f2ed19"
-    },
-    {
       "path": "rtl/crg_icg.sv",
       "bytes": 601,
       "sha256": "10ec2716b49a379630a537bf9233f7e775ce902115c10cda92fc7197701ce0d0"
@@ -42,11 +27,6 @@
       "sha256": "5ea589f7531e6c871b1522c97605e6565a4fbc077efbbc0f018f4f7d242a6e02"
     },
     {
-      "path": "scripts/check_license.sh",
-      "bytes": 1823,
-      "sha256": "67114732f7d73e88837214305d40a6ec04797ff1bf0f0f41a2b02d9791883ed4"
-    },
-    {
       "path": "tb/tb_tpu_crg_dft.sv",
       "bytes": 2365,
       "sha256": "410b2b40738389b61d9e14718f44af1e20f117c100b8bd36d445380273e7f337"
@@ -56,5 +36,6 @@
       "bytes": 2265,
       "sha256": "b1e4adf624c9bdf8b5794c3ba03d4304223cabfdc78c2fc8029a3a90f4301e86"
     }
-  ]
+  ],
+  "sourceScope": "module-rtl-tb-only-20261024"
 }
